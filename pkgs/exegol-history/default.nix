@@ -41,6 +41,12 @@ python313Packages.buildPythonApplication rec {
     "textual"
   ];
 
+  # The application copies this file from the directory containing the
+  # installed Python package on first startup.
+  postInstall = ''
+    install -Dm644 profile.sh "$out/${python313Packages.python.sitePackages}/profile.sh"
+  '';
+
   pythonImportsCheck = [ "exegol_history" ];
 
   meta = {
