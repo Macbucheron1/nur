@@ -1,8 +1,10 @@
 {
   lib,
   python313Packages,
+  autoPatchelfHook,
   fetchFromGitHub,
   fetchurl,
+  stdenv,
 }:
 
 let
@@ -17,6 +19,9 @@ let
       url = "https://files.pythonhosted.org/packages/2f/ec/59f3e259d57b96412b8f47599190317f3733c9f72a467aef5f86e8302906/kreuzberg-4.2.9-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl";
       hash = "sha256-jqQjYwWOZqpM0w2fInTBCNhzvIfBdTwF1fLZKGp6yFc=";
     };
+
+    nativeBuildInputs = [ autoPatchelfHook ];
+    buildInputs = [ stdenv.cc.cc.lib ];
 
     pythonImportsCheck = [ "kreuzberg" ];
   };
