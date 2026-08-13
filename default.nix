@@ -20,9 +20,11 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   bhcli = pkgs.callPackage ./pkgs/bhcli { };
+  bbs = pkgs.callPackage ./pkgs/bbs { };
   devious-winrm = pkgs.callPackage ./pkgs/devious-winrm { };
   exegol-history = pkgs.callPackage ./pkgs/exegol-history { };
   gpoParser = pkgs.callPackage ./pkgs/gpoParser { };
   manspider = pkgs.callPackage ./pkgs/manspider { };
   pkinittools = pkgs.callPackage ./pkgs/pkinittools { };
+  krbrelayx = pkgs.callPackage ./pkgs/krbrelayx { };
 }
