@@ -19,6 +19,10 @@ python313Packages.buildPythonApplication rec {
 
   dependencies = [ python313Packages.impacket ];
 
+  postPatch = ''
+    sed -i "s/^show_banner = '''/show_banner = r'''/" PetitPotam.py
+  '';
+
   installPhase = ''
     runHook preInstall
     install -Dm755 PetitPotam.py $out/bin/petitpotam
