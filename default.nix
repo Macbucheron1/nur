@@ -25,6 +25,7 @@
   exegol-history = pkgs.callPackage ./pkgs/exegol-history { };
   gpoParser = pkgs.callPackage ./pkgs/gpoParser { };
   manspider = pkgs.callPackage ./pkgs/manspider { };
+  petitpotam = pkgs.callPackage ./pkgs/petitpotam { };
   pkinittools = pkgs.callPackage ./pkgs/pkinittools { };
   krbrelayx = pkgs.callPackage ./pkgs/krbrelayx { };
 }
