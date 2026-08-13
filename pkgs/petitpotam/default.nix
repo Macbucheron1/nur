@@ -28,7 +28,6 @@ python313Packages.buildPythonApplication rec {
   meta = {
     description = "PoC to coerce Windows hosts to authenticate via MS-EFSRPC";
     homepage = "https://github.com/topotam/PetitPotam";
-    license = lib.licenses.unfree;
     mainProgram = "petitpotam";
     platforms = lib.platforms.linux;
   };
