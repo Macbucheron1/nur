@@ -24,6 +24,7 @@
   devious-winrm = pkgs.callPackage ./pkgs/devious-winrm { };
   exegol-history = pkgs.callPackage ./pkgs/exegol-history { };
   gpoParser = pkgs.callPackage ./pkgs/gpoParser { };
+  group-policy-backdoor = pkgs.callPackage ./pkgs/group-policy-backdoor { };
   manspider = pkgs.callPackage ./pkgs/manspider { };
   petitpotam = pkgs.callPackage ./pkgs/petitpotam { };
   pkinittools = pkgs.callPackage ./pkgs/pkinittools { };
