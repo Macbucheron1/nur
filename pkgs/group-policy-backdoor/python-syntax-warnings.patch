@@ -1,0 +1,54 @@
+diff --git a/config.py b/config.py
+--- a/config.py
++++ b/config.py
+@@ -23 +23 @@ MODULES_CONFIG = {
+-        "gpt_path": "Preferences\ScheduledTasks\ScheduledTasks.xml",
++        "gpt_path": r"Preferences\ScheduledTasks\ScheduledTasks.xml",
+@@ -30 +30 @@ MODULES_CONFIG = {
+-        "gpt_path": "Preferences\Files\Files.xml",
++        "gpt_path": r"Preferences\Files\Files.xml",
+@@ -37 +37 @@ MODULES_CONFIG = {
+-        "gpt_path": "Preferences\Groups\Groups.xml",
++        "gpt_path": r"Preferences\Groups\Groups.xml",
+@@ -44 +44 @@ MODULES_CONFIG = {
+-        "gpt_path": "Preferences\Registry\Registry.xml",
++        "gpt_path": r"Preferences\Registry\Registry.xml",
+@@ -51 +51 @@ MODULES_CONFIG = {
+-        "gpt_path": "Preferences\Folders\Folders.xml",
++        "gpt_path": r"Preferences\Folders\Folders.xml",
+diff --git a/gpb/commands/gpo/create.py b/gpb/commands/gpo/create.py
+--- a/gpb/commands/gpo/create.py
++++ b/gpb/commands/gpo/create.py
+@@ -196 +196 @@ class GPOCreator:
+-            logger.info(f"[INFO] Created the '{share}\{dir_name}' directory")
++            logger.info(fr"[INFO] Created the '{share}\{dir_name}' directory")
+@@ -243 +243 @@ class GPOCreator:
+-            logger.info(f"[INFO] Initialized the '{share}\{dir_name}\GPT.INI' file")
++            logger.info(fr"[INFO] Initialized the '{share}\{dir_name}\GPT.INI' file")
+diff --git a/gpb/commands/gpo/delete.py b/gpb/commands/gpo/delete.py
+--- a/gpb/commands/gpo/delete.py
++++ b/gpb/commands/gpo/delete.py
+@@ -38 +38 @@ class GPODeleter:
+-                    logger.warning(f"{bcolors.FAIL}[!] Can't save original content for deleted file {smb_path}\{file_info.name}', file is too big ({file_info.smb_info.end_of_file}){bcolors.ENDC}")
++                    logger.warning(fr"{bcolors.FAIL}[!] Can't save original content for deleted file {smb_path}\{file_info.name}', file is too big ({file_info.smb_info.end_of_file}){bcolors.ENDC}")
+@@ -43 +43 @@ class GPODeleter:
+-                logger.warning(f"[*] Deleting SMB file {smb_path}\{file_info.name}")
++                logger.warning(fr"[*] Deleting SMB file {smb_path}\{file_info.name}")
+diff --git a/gpb/commands/gpo/inject.py b/gpb/commands/gpo/inject.py
+--- a/gpb/commands/gpo/inject.py
++++ b/gpb/commands/gpo/inject.py
+@@ -143 +143 @@ class GPOInjecter:
+-                        to_create = f"{target_path}\{directory}"
++                        to_create = fr"{target_path}\{directory}"
+@@ -155 +155 @@ class GPOInjecter:
+-                target_file = f"{base_path}\{MODULES_CONFIG[module_name]['gpt_path']}"
++                target_file = fr"{base_path}\{MODULES_CONFIG[module_name]['gpt_path']}"
+diff --git a/gpb/modules/ScheduledTasks.py b/gpb/modules/ScheduledTasks.py
+--- a/gpb/modules/ScheduledTasks.py
++++ b/gpb/modules/ScheduledTasks.py
+@@ -80 +80 @@ class ScheduledTasks:
+-            runAs = "NT AUTHORITY\SYSTEM"
++            runAs = r"NT AUTHORITY\SYSTEM"
+@@ -276 +276 @@ class ScheduledTasks:
+-            runAs = "NT AUTHORITY\SYSTEM"
++            runAs = r"NT AUTHORITY\SYSTEM"

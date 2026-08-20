@@ -34,29 +34,7 @@ python313Packages.buildPythonApplication {
   dependencies = pythonDeps;
   dontWrapPythonPrograms = true;
 
-  postPatch = ''
-    substituteInPlace config.py \
-      --replace-fail '"gpt_path": "Preferences\ScheduledTasks\ScheduledTasks.xml"' '"gpt_path": r"Preferences\ScheduledTasks\ScheduledTasks.xml"' \
-      --replace-fail '"gpt_path": "Preferences\Files\Files.xml"' '"gpt_path": r"Preferences\Files\Files.xml"' \
-      --replace-fail '"gpt_path": "Preferences\Groups\Groups.xml"' '"gpt_path": r"Preferences\Groups\Groups.xml"' \
-      --replace-fail '"gpt_path": "Preferences\Registry\Registry.xml"' '"gpt_path": r"Preferences\Registry\Registry.xml"' \
-      --replace-fail '"gpt_path": "Preferences\Folders\Folders.xml"' '"gpt_path": r"Preferences\Folders\Folders.xml"'
-
-    substituteInPlace gpb/modules/ScheduledTasks.py \
-      --replace-fail 'runAs = "NT AUTHORITY\SYSTEM"' 'runAs = r"NT AUTHORITY\SYSTEM"'
-
-    substituteInPlace gpb/commands/gpo/create.py \
-      --replace-fail 'logger.info(f"[INFO] Created the '\'''{share}\{dir_name}'\''' directory")' 'logger.info(fr"[INFO] Created the '\'''{share}\{dir_name}'\''' directory")' \
-      --replace-fail 'logger.info(f"[INFO] Initialized the '\'''{share}\{dir_name}\GPT.INI'\''' file")' 'logger.info(fr"[INFO] Initialized the '\'''{share}\{dir_name}\GPT.INI'\''' file")'
-
-    substituteInPlace gpb/commands/gpo/inject.py \
-      --replace-fail 'to_create = f"{target_path}\{directory}"' 'to_create = fr"{target_path}\{directory}"' \
-      --replace-fail 'target_file = f"{base_path}\{MODULES_CONFIG[module_name]['\'''gpt_path'\''']}"' 'target_file = fr"{base_path}\{MODULES_CONFIG[module_name]['\'''gpt_path'\''']}"'
-
-    substituteInPlace gpb/commands/gpo/delete.py \
-      --replace-fail 'logger.warning(f"{bcolors.FAIL}[!] Can'\'''t save original content for deleted file {smb_path}\{file_info.name}'\''', file is too big ({file_info.smb_info.end_of_file}){bcolors.ENDC}")' 'logger.warning(fr"{bcolors.FAIL}[!] Can'\'''t save original content for deleted file {smb_path}\{file_info.name}'\''', file is too big ({file_info.smb_info.end_of_file}){bcolors.ENDC}")' \
-      --replace-fail 'logger.warning(f"[*] Deleting SMB file {smb_path}\{file_info.name}")' 'logger.warning(fr"[*] Deleting SMB file {smb_path}\{file_info.name}")'
-  '';
+  patches = [ ./python-syntax-warnings.patch ];
 
   buildPhase = ''
     runHook preBuild
@@ -105,4 +83,4 @@ python313Packages.buildPythonApplication {
     mainProgram = "gpb.py";
     platforms = lib.platforms.linux;
   };
-}
+/bin/bash: line 1: q: command not found
