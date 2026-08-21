@@ -83,4 +83,4 @@ python313Packages.buildPythonApplication {
     mainProgram = "gpb.py";
     platforms = lib.platforms.linux;
   };
-/bin/bash: line 1: q: command not found
+}
