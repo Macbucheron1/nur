@@ -12,6 +12,7 @@
         pkgs = import nixpkgs { inherit system; };
       });
       packages = forAllSystems (system: nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) self.legacyPackages.${system});
+      overlays = import ./overlays;
       nixosModules = import ./nixos-modules;
       # homeModules = import ./home-modules;
       # darwinModules = import ./darwin-modules;

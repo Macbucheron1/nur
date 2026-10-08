@@ -19,6 +19,7 @@
   # flakeModules = { }; # flake-parts modules
   overlays = import ./overlays; # nixpkgs overlays
 
+  adidnsdump = pkgs.callPackage ./pkgs/adidnsdump { };
   bhcli = pkgs.callPackage ./pkgs/bhcli { };
   bbs = pkgs.callPackage ./pkgs/bbs { };
   devious-winrm = pkgs.callPackage ./pkgs/devious-winrm { };
@@ -29,4 +30,5 @@
   petitpotam = pkgs.callPackage ./pkgs/petitpotam { };
   pkinittools = pkgs.callPackage ./pkgs/pkinittools { };
   krbrelayx = pkgs.callPackage ./pkgs/krbrelayx { };
+  rusthound-ce = pkgs.callPackage ./pkgs/rusthound-ce { };
 }

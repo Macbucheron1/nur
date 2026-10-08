@@ -1,5 +1,8 @@
+# Overlays provided by this repository.
+#
+# - `default` exposes every package at the top level (pkgs.<name>).
+# - `nur` nests them under the `nur` namespace (pkgs.nur.<name>).
 {
-  # Add your overlays here
-  #
-  # my-overlay = import ./my-overlay;
+  default = import ./flat.nix;
+  nur = import ./nur.nix;
 }
