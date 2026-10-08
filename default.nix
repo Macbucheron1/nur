@@ -29,4 +29,5 @@
   petitpotam = pkgs.callPackage ./pkgs/petitpotam { };
   pkinittools = pkgs.callPackage ./pkgs/pkinittools { };
   krbrelayx = pkgs.callPackage ./pkgs/krbrelayx { };
+  rusthound-ce = pkgs.callPackage ./pkgs/rusthound-ce { };
 }
