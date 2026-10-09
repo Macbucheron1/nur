@@ -17,6 +17,7 @@ A collection of cybersecurity packages, packaged as a [Nix flake](https://nixos.
 | [group-policy-backdoor](https://github.com/synacktiv/GroupPolicyBackdoor) | Modular framework for manipulating and exploiting Group Policy Objects |
 | [iamhounddog](https://github.com/VirtueSecurity/IAMhounddog) | Identify privileged AWS principals and privilege escalation paths |
 | [krbrelayx](https://github.com/dirkjanm/krbrelayx) | Kerberos relaying and unconstrained delegation abuse toolkit |
+| [ldeep](https://github.com/franc-pentest/ldeep) | In-depth LDAP enumeration utility |
 | [manspider](https://github.com/blacklanternsecurity/MANSPIDER) | SMB spider capable of searching file content |
 | [petitpotam](https://github.com/topotam/PetitPotam) | Coerce Windows hosts to authenticate via MS-EFSRPC |
 | [pkinittools](https://github.com/dirkjanm/PKINITtools) | Tools for Kerberos PKINIT and relaying to AD CS |

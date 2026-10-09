@@ -30,6 +30,7 @@
   group-policy-backdoor = pkgs.callPackage ./pkgs/group-policy-backdoor { };
   iamhounddog = pkgs.callPackage ./pkgs/iamhounddog { };
   krbrelayx = pkgs.callPackage ./pkgs/krbrelayx { };
+  ldeep = pkgs.callPackage ./pkgs/ldeep { };
   manspider = pkgs.callPackage ./pkgs/manspider { };
   petitpotam = pkgs.callPackage ./pkgs/petitpotam { };
   pkinittools = pkgs.callPackage ./pkgs/pkinittools { };
