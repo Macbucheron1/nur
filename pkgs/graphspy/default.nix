@@ -18,6 +18,11 @@ python313Packages.buildPythonApplication rec {
   pyproject = true;
   build-system = [ python313Packages.uv-build ];
 
+  postPatch = ''
+    substituteInPlace pyproject.toml \
+      --replace-fail 'uv_build>=0.11.8,<0.12' 'uv_build'
+  '';
+
   dependencies = with python313Packages; [
     fido2
     flask
