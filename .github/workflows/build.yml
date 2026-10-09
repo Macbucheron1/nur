@@ -50,5 +50,16 @@ jobs:
     - name: Build nix packages
       run: nix shell -f '<nixpkgs>' nix-build-uncached -c nix-build-uncached ci.nix -A cacheOutputs
     - name: Trigger NUR update
-      if: ${{ github.event_name != 'pull_request' }}
-      run: curl --fail-with-body -XPOST "https://nur-update.nix-community.org/update?repo=${{ matrix.nurRepo }}"
+      if: ${{ github.event_name != 'pull_request' && contains(matrix.nixPath, 'nixpkgs-unstable') }}
+      run: |
+        response_file="$RUNNER_TEMP/nur-update-response"
+        status="$(curl --silent --show-error --output "$response_file" --write-out '%{http_code}' \
+          -XPOST "https://nur-update.nix-community.org/update?repo=${{ matrix.nurRepo }}")"
+        cat "$response_file"
+
+        if [ "$status" = "429" ]; then
+          echo "::notice::NUR was updated recently; skipping this rate-limited trigger."
+        elif [ "$status" -lt 200 ] || [ "$status" -ge 300 ]; then
+          echo "::error::NUR update endpoint returned HTTP $status."
+          exit 1
+        fi
