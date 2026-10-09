@@ -18,11 +18,11 @@ python313Packages.buildPythonApplication rec {
   pyproject = true;
   build-system = [ python313Packages.uv-build ];
 
-  # nixos-unstable ships a newer uv-build than the project's upper bound,
-  # while the backend remains compatible with it.
+  # Nixpkgs may ship an older uv-build than the project's lower bound. The
+  # backend API used here is compatible with the packaged version.
   postPatch = ''
     substituteInPlace pyproject.toml \
-      --replace-fail 'uv_build>=0.10.7,<0.11.0' 'uv_build>=0.10.7'
+      --replace-fail 'uv_build>=0.10.7,<0.11.0' 'uv_build'
   '';
 
   dependencies = with python313Packages; [
