@@ -4,20 +4,25 @@ A collection of cybersecurity packages, packaged as a [Nix flake](https://nixos.
 
 ## Contents
 
-| Package                | Description                                                                 |
-| ---------------------- | --------------------------------------------------------------------------- |
-| [adidnsdump](https://github.com/dirkjanm/adidnsdump)              | Active Directory Integrated DNS dumping by any authenticated user           |
-| [bbs](https://github.com/synacktiv/bbs)                           | Router for SOCKS and HTTP proxies                                           |
-| [bhcli](https://github.com/exploide/bhcli)                        | CLI tool to interact with the BloodHound CE API                             |
-| [devious-winrm](https://github.com/1upbyte/Devious-WinRM)         | A pentester's PowerShell client                                             |
-| [exegol-history](https://github.com/ThePorgs/Exegol-history)      | TUI to manage compromised credentials and hosts during an engagement        |
-| [gpoParser](https://github.com/synacktiv/gpoParser)               | Extract and analyze Active Directory Group Policy Objects                   |
+| Package | Description |
+| --- | --- |
+| [adidnsdump](https://github.com/dirkjanm/adidnsdump) | Active Directory Integrated DNS dumping by any authenticated user |
+| [awshound](https://github.com/AWSHound/AWSHound) | AWS IAM data collector and BloodHound OpenGraph connector |
+| [bbs](https://github.com/synacktiv/bbs) | Router for SOCKS and HTTP proxies |
+| [bhcli](https://github.com/exploide/bhcli) | CLI tool to interact with the BloodHound CE API |
+| [devious-winrm](https://github.com/1upbyte/Devious-WinRM) | A pentester's PowerShell client |
+| [exegol-history](https://github.com/ThePorgs/Exegol-history) | TUI to manage compromised credentials and hosts during an engagement |
+| [gpoParser](https://github.com/synacktiv/gpoParser) | Extract and analyze Active Directory Group Policy Objects |
+| [graphspy](https://github.com/RedByte1337/GraphSpy) | Initial Access and Post-Exploitation Tool for Entra ID and M365 |
 | [group-policy-backdoor](https://github.com/synacktiv/GroupPolicyBackdoor) | Modular framework for manipulating and exploiting Group Policy Objects |
-| [manspider](https://github.com/blacklanternsecurity/MANSPIDER)    | SMB spider capable of searching file content                                |
-| [petitpotam](https://github.com/topotam/PetitPotam)               | Coerce Windows hosts to authenticate via MS-EFSRPC                          |
-| [pkinittools](https://github.com/dirkjanm/PKINITtools)            | Tools for Kerberos PKINIT and relaying to AD CS                             |
-| [krbrelayx](https://github.com/dirkjanm/krbrelayx)                | Kerberos relaying and unconstrained delegation abuse toolkit                |
-| [rusthound-ce](https://github.com/g0h4n/RustHound-CE)             | Active Directory data ingestor for BloodHound Community Edition             |
+| [iamhounddog](https://github.com/VirtueSecurity/IAMhounddog) | Identify privileged AWS principals and privilege escalation paths |
+| [krbrelayx](https://github.com/dirkjanm/krbrelayx) | Kerberos relaying and unconstrained delegation abuse toolkit |
+| [manspider](https://github.com/blacklanternsecurity/MANSPIDER) | SMB spider capable of searching file content |
+| [petitpotam](https://github.com/topotam/PetitPotam) | Coerce Windows hosts to authenticate via MS-EFSRPC |
+| [pkinittools](https://github.com/dirkjanm/PKINITtools) | Tools for Kerberos PKINIT and relaying to AD CS |
+| [rusthound-ce](https://github.com/g0h4n/RustHound-CE) | Active Directory data ingestor for BloodHound Community Edition |
+| [sccmsecrets](https://github.com/synacktiv/SCCMSecrets) | SCCM policies exploitation tool for credential harvesting and lateral movement |
+| [webclientservicescanner](https://github.com/Hackndo/WebclientServiceScanner) | Check running WebClient services on multiple targets |
 
 ## Usage
 

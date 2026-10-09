@@ -20,15 +20,20 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   adidnsdump = pkgs.callPackage ./pkgs/adidnsdump { };
-  bhcli = pkgs.callPackage ./pkgs/bhcli { };
+  awshound = pkgs.callPackage ./pkgs/awshound { };
   bbs = pkgs.callPackage ./pkgs/bbs { };
+  bhcli = pkgs.callPackage ./pkgs/bhcli { };
   devious-winrm = pkgs.callPackage ./pkgs/devious-winrm { };
   exegol-history = pkgs.callPackage ./pkgs/exegol-history { };
   gpoParser = pkgs.callPackage ./pkgs/gpoParser { };
+  graphspy = pkgs.callPackage ./pkgs/graphspy { };
   group-policy-backdoor = pkgs.callPackage ./pkgs/group-policy-backdoor { };
+  iamhounddog = pkgs.callPackage ./pkgs/iamhounddog { };
+  krbrelayx = pkgs.callPackage ./pkgs/krbrelayx { };
   manspider = pkgs.callPackage ./pkgs/manspider { };
   petitpotam = pkgs.callPackage ./pkgs/petitpotam { };
   pkinittools = pkgs.callPackage ./pkgs/pkinittools { };
-  krbrelayx = pkgs.callPackage ./pkgs/krbrelayx { };
   rusthound-ce = pkgs.callPackage ./pkgs/rusthound-ce { };
+  sccmsecrets = pkgs.callPackage ./pkgs/sccmsecrets { };
+  webclientservicescanner = pkgs.callPackage ./pkgs/webclientservicescanner { };
 }
