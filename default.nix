@@ -23,6 +23,7 @@
   awshound = pkgs.callPackage ./pkgs/awshound { };
   bbs = pkgs.callPackage ./pkgs/bbs { };
   bhcli = pkgs.callPackage ./pkgs/bhcli { };
+  bloodhound-cli = pkgs.callPackage ./pkgs/bloodhound-cli { };
   devious-winrm = pkgs.callPackage ./pkgs/devious-winrm { };
   exegol-history = pkgs.callPackage ./pkgs/exegol-history { };
   gpoParser = pkgs.callPackage ./pkgs/gpoParser { };

@@ -10,6 +10,7 @@ A collection of cybersecurity packages, packaged as a [Nix flake](https://nixos.
 | [awshound](https://github.com/AWSHound/AWSHound) | AWS IAM data collector and BloodHound OpenGraph connector |
 | [bbs](https://github.com/synacktiv/bbs) | Router for SOCKS and HTTP proxies |
 | [bhcli](https://github.com/exploide/bhcli) | CLI tool to interact with the BloodHound CE API |
+| [bloodhound-cli](https://github.com/SpecterOps/bloodhound-cli) | Install and manage BloodHound Community Edition |
 | [devious-winrm](https://github.com/1upbyte/Devious-WinRM) | A pentester's PowerShell client |
 | [exegol-history](https://github.com/ThePorgs/Exegol-history) | TUI to manage compromised credentials and hosts during an engagement |
 | [gpoParser](https://github.com/synacktiv/gpoParser) | Extract and analyze Active Directory Group Policy Objects |
