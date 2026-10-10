@@ -2,13 +2,13 @@
 # exposes the packages at the top level (pkgs.<name>), this overlay places
 # them under the `nur` namespace so they can be referenced as
 # `pkgs.nur.<name>`.
-self: super: let
+final: prev: let
   isReserved = n: n == "lib" || n == "overlays" || n == "nixosModules" || n == "homeModules" || n == "darwinModules" || n == "flakeModules";
   nameValuePair = n: v: {
     name = n;
     value = v;
   };
-  nurAttrs = import ../default.nix {pkgs = super;};
+  nurAttrs = import ../default.nix {pkgs = prev;};
 in {
   nur =
     builtins.listToAttrs
