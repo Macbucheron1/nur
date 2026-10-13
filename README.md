@@ -23,6 +23,7 @@ A collection of cybersecurity packages, packaged as a [Nix flake](https://nixos.
 | [manspider](https://github.com/blacklanternsecurity/MANSPIDER) | SMB spider capable of searching file content |
 | [petitpotam](https://github.com/topotam/PetitPotam) | Coerce Windows hosts to authenticate via MS-EFSRPC |
 | [pkinittools](https://github.com/dirkjanm/PKINITtools) | Tools for Kerberos PKINIT and relaying to AD CS |
+| [roadtools](https://github.com/synacktiv/ROADtools) | Azure AD / Entra ID framework (roadrecon, roadtx) |
 | [rusthound-ce](https://github.com/g0h4n/RustHound-CE) | Active Directory data ingestor for BloodHound Community Edition |
 | [sccmsecrets](https://github.com/synacktiv/SCCMSecrets) | SCCM policies exploitation tool for credential harvesting and lateral movement |
 | [webclientservicescanner](https://github.com/Hackndo/WebclientServiceScanner) | Check running WebClient services on multiple targets |

@@ -36,6 +36,7 @@
   manspider = pkgs.callPackage ./pkgs/manspider { };
   petitpotam = pkgs.callPackage ./pkgs/petitpotam { };
   pkinittools = pkgs.callPackage ./pkgs/pkinittools { };
+  roadtools = pkgs.callPackage ./pkgs/roadtools { };
   rusthound-ce = pkgs.callPackage ./pkgs/rusthound-ce { };
   sccmsecrets = pkgs.callPackage ./pkgs/sccmsecrets { };
   webclientservicescanner = pkgs.callPackage ./pkgs/webclientservicescanner { };
