@@ -7,6 +7,7 @@ A collection of cybersecurity packages, packaged as a [Nix flake](https://nixos.
 | Package | Description |
 | --- | --- |
 | [adidnsdump](https://github.com/dirkjanm/adidnsdump) | Active Directory Integrated DNS dumping by any authenticated user |
+| [arpspoof](https://github.com/ickerwx/arpspoof) | ARP poisoning tool with an interactive command line interface |
 | [awshound](https://github.com/AWSHound/AWSHound) | AWS IAM data collector and BloodHound OpenGraph connector |
 | [bbs](https://github.com/synacktiv/bbs) | Router for SOCKS and HTTP proxies |
 | [bhcli](https://github.com/exploide/bhcli) | CLI tool to interact with the BloodHound CE API |

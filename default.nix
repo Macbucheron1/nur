@@ -20,6 +20,7 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   adidnsdump = pkgs.callPackage ./pkgs/adidnsdump { };
+  arpspoof = pkgs.callPackage ./pkgs/arpspoof { };
   awshound = pkgs.callPackage ./pkgs/awshound { };
   bbs = pkgs.callPackage ./pkgs/bbs { };
   bhcli = pkgs.callPackage ./pkgs/bhcli { };
