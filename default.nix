@@ -39,5 +39,6 @@
   roadtools = pkgs.callPackage ./pkgs/roadtools { };
   rusthound-ce = pkgs.callPackage ./pkgs/rusthound-ce { };
   sccmsecrets = pkgs.callPackage ./pkgs/sccmsecrets { };
+  titus = pkgs.callPackage ./pkgs/titus { };
   webclientservicescanner = pkgs.callPackage ./pkgs/webclientservicescanner { };
 }

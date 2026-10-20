@@ -26,6 +26,7 @@ A collection of cybersecurity packages, packaged as a [Nix flake](https://nixos.
 | [roadtools](https://github.com/synacktiv/ROADtools) | Azure AD / Entra ID framework (roadrecon, roadtx) |
 | [rusthound-ce](https://github.com/g0h4n/RustHound-CE) | Active Directory data ingestor for BloodHound Community Edition |
 | [sccmsecrets](https://github.com/synacktiv/SCCMSecrets) | SCCM policies exploitation tool for credential harvesting and lateral movement |
+| [titus](https://github.com/praetorian-inc/titus) | Secrets scanner with Hyperscan-accelerated detection rules |
 | [webclientservicescanner](https://github.com/Hackndo/WebclientServiceScanner) | Check running WebClient services on multiple targets |
 
 ## Usage
