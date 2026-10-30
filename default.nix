@@ -25,6 +25,7 @@
   bbs = pkgs.callPackage ./pkgs/bbs { };
   bhcli = pkgs.callPackage ./pkgs/bhcli { };
   bloodhound-cli = pkgs.callPackage ./pkgs/bloodhound-cli { };
+  caido-mcp-server = pkgs.callPackage ./pkgs/caido-mcp-server { };
   devious-winrm = pkgs.callPackage ./pkgs/devious-winrm { };
   exegol-history = pkgs.callPackage ./pkgs/exegol-history { };
   gpoParser = pkgs.callPackage ./pkgs/gpoParser { };
