@@ -41,6 +41,7 @@
   responder = pkgs.callPackage ./pkgs/responder { };
   roadtools = pkgs.callPackage ./pkgs/roadtools { };
   rusthound-ce = pkgs.callPackage ./pkgs/rusthound-ce { };
+  sccmhunter = pkgs.callPackage ./pkgs/sccmhunter { };
   sccmsecrets = pkgs.callPackage ./pkgs/sccmsecrets { };
   titus = pkgs.callPackage ./pkgs/titus { };
   webclientservicescanner = pkgs.callPackage ./pkgs/webclientservicescanner { };
