@@ -6,13 +6,13 @@
   symlinkJoin,
 }:
 let
-  version = "0-unstable-2026-10-07";
+  version = "0-unstable-2026-11-03";
 
   src = fetchFromGitHub {
     owner = "synacktiv";
     repo = "ROADtools";
-    rev = "c91bac70494134cd54e3c694556a56ed32458458";
-    hash = "sha256-7jErb+xNEtwDoG0hfNdngYLhSF0C9amfQsHRN9h9hcc=";
+    rev = "03a5728e79c59b6d4284e217d665d9e3cdf637d1";
+    hash = "sha256-JNOyQy4xNK1NQwgTgJCWPyx3tnWu6OJA1nKABcU7Hmg=";
   };
 
   meta = {
